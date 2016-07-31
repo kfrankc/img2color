@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>img2color</title>
+	  	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <!-- og tags -->
+<!-- 	    <meta property="og:url" content="http://www.kfrankc.me/img2color" />
+	    <meta property="og:title" content="img2color" />
+	    <meta property="og:description" content="Create color palette instantly from input image!" />
+	    <meta property="og:image" content="http://www.kfrankc.me/img2color/img/cover.png" />
+	    <meta property="og:image:width" content="322" />
+	    <meta property="og:image:height" content="325" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="description" content="Create color palette instantly from input image!">
+	    <meta name="author" content="Frank Chen"> -->
+	    <!--css-->
+    	<link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="css/rainbow.css">
+    	<link rel="stylesheet" href="css/animate.css">
+    	<!--js-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script> -->
+    	<script src="js/fileuploader.js"></script>
+    	<script src="js/readimg.js"></script>
+    	<script src="js/Vibrant.min.js"></script>
+    	<script src="js/wow.min.js"></script>
+    	<script type="js/imageloader.js"></script>
+    	<!--responsive icons-->
+    	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<script> 
+			new WOW().init();
+		</script>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="http://kfrankc.me">Home</a></li>
+				</ul>
+			</nav>
+			<a href="index.html"><h1 class="rainbow">img2color</h1></a>
+		</header>
+		<section>
+			<div class="wow fadeIn">
+				<h3>Create color palette instantly from input image using <a href="https://jariz.github.io/vibrant.js/" target="_blank">Vibrant.js</a>.</h3><br>
+				<small>Made by <a href="http://kfrankc.me" target="_blank">@kfrankc</a></small>
+			</div>
+			<div class="wow fadeIn" data-wow-delay="0.3s">
+				<div id="dropzone" class="rainbow">
+		 			<div>
+		 				Drop image here...
+					</div>
+					<input type="file" accept="image/png, image/jpeg"  onchange="showMyImage(this)" />
+				</div>
+			</div>
+			<br/><br/>
+			<div id="imagediv"></div>
+		</section>
+		<section>
+			<div id="content" style="text-align:center"></div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400);
+header {
+    position: relative;
+}
+
+header nav {
+    font-size: 120%;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 0.5em;
+    vertical-align: middle;
+}
+
+header a {
+    color: inherit;
+}
+
+body {
+    font: normal 100% Ubuntu, sans-serif;
+    margin: 0;
+    color: #555;
+}
+
+body > * {
+    width: 790px;
+    padding: 10px;
+    margin: 20px auto;
+    font-weight: 300;
+}
+
+a {
+    color: #2D4059;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007AB5;
+    text-decoration: none;
+}
+
+h1 a {
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 300;
+    /*font-size: 1.5em;*/
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0 1em;
+    font-weight: 300;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
+.fill {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden
+}
+.fill img {
+    flex-shrink:0;
+    min-width:100%;
+    max-height:200px;
+}
+
+#dropzone {
+    /*Sort of important*/
+    width: 300px;
+    /*Sort of important*/
+    height: 200px;
+    position:absolute;
+    left:50%;
+    top:50px;
+    margin-left:-150px;
+    border: 2px dashed rgba(0,0,0,.3);
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    line-height: 180px;
+    font-size: 20px;
+    color: rgba(0,0,0,.3);
+}
+
+#dropzone input {
+    /*Important*/
+    position: absolute;
+    /*Important*/
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    /* Important This is only comment out for demonstration purpeses. */
+    opacity:0;
+}
+
+/*Important*/
+#dropzone.mouse-over {
+    border: 2px dashed rgba(0,0,0,.5);
+    color: rgba(0,0,0,.5);
+}
+
+#dropzone.hover {
+  border: 5px solid #4499DD;
+  color: #4499DD;
+}
+
+#dropzone.dropped {
+  display:none;
+}
+
+#dropzone img {
+  border-radius: 10px;
+  vertical-align: middle;
+  max-width: 95%;
+  max-height: 95%;
+}
+
+#dropzone [type="file"] {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

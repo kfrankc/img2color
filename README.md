@@ -1,3 +1,3 @@
 ## img2color
 
-Creates color palette from input image using Vibrant.js
+:art: Creates color palette from input image using Vibrant.js
