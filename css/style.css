@@ -43,11 +43,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #007AB5;
-    text-decoration: none;
-}
-
 h1 a {
     color: inherit;
 }
@@ -86,9 +81,7 @@ img[data-src] {
 }
 
 #dropzone {
-    /*Sort of important*/
     width: 300px;
-    /*Sort of important*/
     height: 200px;
     position:absolute;
     left:50%;
@@ -121,8 +114,10 @@ img[data-src] {
 }
 
 #dropzone.hover {
-  border: 5px solid #4499DD;
-  color: #4499DD;
+  -webkit-animation:rainbow 1s infinite;
+  -ms-animation:rainbow 1s infinite;
+  -o-animation:rainbow 1s infinite;
+  animation:rainbow 1s infinite;
 }
 
 #dropzone.dropped {
